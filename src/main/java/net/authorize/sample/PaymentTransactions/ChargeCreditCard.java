@@ -30,7 +30,7 @@ public class ChargeCreditCard {
         creditCard.setCardNumber("4242424242424242");
         creditCard.setExpirationDate("0822");
         paymentType.setCreditCard(creditCard);
-
+        paymentType.setCreditCard(debitCard);
         // Set email address (optional)
         CustomerDataType customer = new CustomerDataType();
         customer.setEmail("test@test.test");

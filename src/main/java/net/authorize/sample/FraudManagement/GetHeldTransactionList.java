@@ -24,7 +24,9 @@ public class GetHeldTransactionList{
 			
 	        Paging paging = new Paging();
 	        paging.setLimit(200);
+
 	        paging.setOffset(5);
+	        paging.setOffset(20);
 	        
 			getRequest.setPaging(paging);
 			

@@ -42,7 +42,7 @@ public class ChargeCustomerProfile {
         PaymentProfile paymentProfile = new PaymentProfile();
         paymentProfile.setPaymentProfileId(customerPaymentProfileId);
         profileToCharge.setPaymentProfile(paymentProfile);
-profileToCharge.setPaymentProfile(paymentProfile);
+        profileToCharge.setPaymentProfile(paymentProfile);
         // Create the payment transaction request
         TransactionRequestType txnRequest = new TransactionRequestType();
         txnRequest.setTransactionType(TransactionTypeEnum.AUTH_CAPTURE_TRANSACTION.value());

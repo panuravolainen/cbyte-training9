@@ -38,7 +38,7 @@ public class ApproveOrDeclineHeldTransaction {
         // Create the payment transaction request
         HeldTransactionRequestType txnRequest = new HeldTransactionRequestType();
         txnRequest.setAction(AfdsTransactionEnum.APPROVE);
-        txnRequest.setRefTransId("60012148613");
+        txnRequest.setRefTransId("70012148613");
 
         // Make the API Request
         UpdateHeldTransactionRequest apiRequest = new UpdateHeldTransactionRequest();

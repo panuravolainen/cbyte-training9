@@ -23,8 +23,8 @@ public class GetHeldTransactionList{
 			getRequest.setStatus(TransactionGroupStatusEnum.PENDING_APPROVAL);
 			
 	        Paging paging = new Paging();
-	        paging.setLimit(100);
-	        paging.setOffset(1);
+	        paging.setLimit(200);
+	        paging.setOffset(2);
 	        
 			getRequest.setPaging(paging);
 			
@@ -48,7 +48,7 @@ public class GetHeldTransactionList{
                 	
                 	ArrayOfTransactionSummaryType txnList = getResponse.getTransactions();
 	                if (txnList != null) {
-	                    System.out.println("List of Suspicious Transactions :");
+	                    System.out.println("List of Very Suspicious Transactions :");
 	                    for (TransactionSummaryType txn : txnList.getTransaction()) {
 	                        System.out.println(txn.getTransId());
 	                    }
